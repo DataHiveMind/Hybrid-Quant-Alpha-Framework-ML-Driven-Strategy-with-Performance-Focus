@@ -1,0 +1,11 @@
+# configs/strategy_configs/default_strategy.yaml
+
+initial_capital: 100000.0
+position_size_per_trade_usd: 10000 # Example: $10,000 per trade
+commission_per_share: 0.005 # Example: $0.005 per share
+slippage_bps: 0.01 # Example: 0.01% slippage (1 basis point) on trade value
+model_to_use: "xgb" # Which ML model from models_trained/archived to use ('rf', 'xgb')
+prediction_to_action_map:
+  '1': 'BUY'   # Model predicts 1 (strong up), action is BUY
+  '0': 'HOLD'  # Model predicts 0 (flat), action is HOLD
+  '-1': 'SELL' # Model predicts -1 (strong down), action is SELL (shorting is simplified here)

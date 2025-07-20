@@ -1,0 +1,21 @@
+name: quant_ml_alpha
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - openpyxl
+  - ta-lib
+  - pip
+
+  - pip:
+    - yfinance
+    - plotly
+    - cufflinks
+    - xgboost # Add this line

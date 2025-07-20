@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+.env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Data
+data/raw/* # Don't commit large raw data files, acquire them programmatically
+data/processed/* # Don't commit processed data, generate it
+models_trained/* # Don't commit large trained models, manage them carefully
+reports/* # Don't commit generated reports
+
+# IDEs and other tools
+.vscode/
+.idea/
+*.log
+*.sqlite3
